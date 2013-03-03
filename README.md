@@ -8,7 +8,7 @@ WordPress simple one-column theme designed to be great for displaying code
   * Uses Google Prettify for code syntax highlighting
     http://code.google.com/p/google-code-prettify/
 
-  * Automattically attaches prettify to all <pre> tags 
+  * Automattically attaches prettify to all &lt;pre&gt; tags 
 
   * Colors inspired by Van Gogh Starry Night
 	TODO: theme options for colors
