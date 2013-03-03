@@ -14,8 +14,14 @@ WordPress simple one-column theme designed to be great for displaying code
 	TODO: theme options for colors
 
 
+### Example Site
+
+This theme was developed for my personal solutions log, a live example can be viewed at <a href="http://mkaz.com/solog">http://mkaz.com/solog</a>.
 
 
-License: This theme, like WordPress, is licensed under the GPL.
-		 Use it to make something cool, and share what you've learned with others.
+
+### License 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, and share what you've learned with others.
 
