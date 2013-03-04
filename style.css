@@ -34,7 +34,9 @@ html {
 
 body { 
 	margin: 16px; 
-	background-color: #E3E0C3;
+	/*background-color: #E3E0C3;*/
+	background-color: #CCCCCC;
+	background-image: url('textured-stripes.png');
 	color: #333;
 }
 
@@ -199,7 +201,8 @@ h3#reply-title { margin-top: 8px; }
 
 div#respond {
 	padding: 32px 64px 64px 64px;
-	background-color: #73AFB7;
+	/*background-color: #73AFB7;*/
+	background-color: #C9D9EB;
 	margin: 32px 0px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
@@ -213,8 +216,11 @@ p.logged-in-as { float: right; margin-top: -2em; }
 div#secondary {
 	clear: both;
 	overflow: hidden;
-	background-color: #CBD893;
+	/*background-color: #CBD893;*/
+	background-color: #F0F0F0;
 	padding: 32px 64px 32px 64px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 #secondary aside#search-2 {
@@ -257,8 +263,11 @@ nav.nav-single {
 	clear: both;
 	margin-bottom: 32px;
 	padding: 16px;
-	background-color: #CBD893;
+	/*background-color: #CBD893;*/
+	background-color: #F0F0F0;
 	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
 }
 

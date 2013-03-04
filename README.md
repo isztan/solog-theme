@@ -10,9 +10,6 @@ WordPress simple one-column theme designed to be great for displaying code
 
   * Automattically attaches prettify to all &lt;pre&gt; tags 
 
-  * Colors inspired by Van Gogh Starry Night
-	TODO: theme options for colors
-
 
 ### Example Site
 
