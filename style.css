@@ -81,6 +81,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* end normalize */
 
+.clearfix { clear: both; overflow: hidden; }
 .alignleft { float: left; }
 .alignright { float: right; }
 
