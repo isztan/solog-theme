@@ -1,42 +1,47 @@
 /*
-Theme Name:     solog
-Theme URI:      http://github.com/mkaz/solog-theme
-Description:    Solog is a simple single column theme, designed to be great for displaying code (child of Twenty-Twelve) 
-Author:         Marcus Kazmierczak
-Author URI:     http://mkaz.com/about/
-Template:       twentytwelve
-Version:        0.1.0
+Theme Name: solog
+Theme URI: http://github.com/mkaz/solog
+Author: Marcus Kazmierczak
+Author URI: http://mkaz.com/
+Description: Solog is a simple theme designed to be great for displaying code
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: code, simple
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+Kick started using Underscores.me
 
-normalize.css v2.1.0 | MIT License | git.io/normalize 
+Credits:
+
+  Normalize.css - don't reset your css to zero normalize it
+  http://necolas.github.com/normalize.css/
+
+	Subtle Patterns - http://subtlepatterns.com/
 
 */
 
+@import url(http://fonts.googleapis.com/css?family=Podkova);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700);
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-}
+/* ----------------------------- normalize    ---------- */
 
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
 
-
-html {
-    font-family: 'PT Serif', Georgia, serif; 
-    -webkit-text-size-adjust: 100%; 
-    -ms-text-size-adjust: 100%;
+html { 
+	font-family: Cambria, Georgia, serif; 
+	-webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
 }
 
 body { 
-	margin: 16px; 
-	/*background-color: #E3E0C3;*/
-	background-color: #CCCCCC;
-	background-image: url('textured-stripes.png');
+	font-size: 18px;
+	margin: 16px;
+	background-color: #F0F0F0;
 	color: #333;
 }
 
@@ -77,9 +82,7 @@ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webki
 button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
 
-table { border-collapse: collapse; border-spacing: 0; }
-
-/* end normalize */
+/* ----------------------------- defaults     ---------- */
 
 .clearfix { clear: both; overflow: hidden; }
 .alignleft { float: left; }
@@ -112,36 +115,6 @@ table thead th { vertical-align: bottom; }
 	width: 768px;
 }
 
-.assistive-text { display: none; }
-nav#site-navigation h3.menu-toggle { display:none; }
-
-.single .nav-menu { display: none; }
-
-.nav-menu {
-	background-color: #FFFFFF;
-	padding: 8px 64px;
-	margin: 16px 0px;
-}
-
-.nav-menu ul {
-	list-style: none outside none;
-}
-
-.nav-menu li {
-	display: inline-block;
-	position: relative;
-	margin-right: 32px;
-}
-
-
-article {
-	margin-bottom: 32px;
-	background-color: #FFFFFF;
-	padding: 32px 64px 64px 64px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Droid Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-weight: normal;
@@ -162,7 +135,6 @@ a:hover      { color: #09B; }
 	margin-top: 32px;
 }
 
-
 div.entry-summary {
 	margin: 1em 0;
 }
@@ -178,31 +150,89 @@ pre {
 	line-height: 1.2em;
 }
 
-/* end default styles */
+.screen-reader-text { display: none; }
+
+
+/* ----------------------------- header       ---------- */
 
 header {
 	margin-bottom: 32px;
 }
 
-h4.site-title {
-	font-size: 48px;
-	font-family: Georgia, serif;
+h1.site-title {
+	font-size: 64px;
+	font-family: Podkova, Georgia, serif;
 	text-transform: lowercase;
 	text-align: center;
 }	
 
-h5.site-description {
-	font-size: 14px;
+h2.site-description {
+	font-size: 24px;
 	text-align: center;
 }
 
-/* comments */
+
+/* ----------------------------- primary menu ---------- */
+
+.single #site-navigation div.menu { display: none; }
+
+#site-navigation div.menu {
+	background-color: #FFFFFF;
+	padding: 8px 32px;
+	margin: 16px 0px;
+}
+
+#site-navigation div.menu ul {
+	list-style: none outside none;
+}
+
+#site-navigation div.menu li {
+	display: inline-block;
+	position: relative;
+	margin-right: 32px;
+}
+
+
+/* ----------------------------- article      ---------- */
+
+article {
+	margin-bottom: 32px;
+	background-color: #FFFFFF;
+	padding: 32px 64px 64px 64px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+article footer {
+	margin-top: 32px;
+	border-top: 1px solid #999;
+}
+
+nav span.nav-previous {
+	float: left;
+}
+nav span.nav-next {
+	float: right;
+}
+
+nav#nav-below,
+nav.nav-single {
+	clear: both;
+	margin-bottom: 32px;
+	padding: 16px;
+	background-color: #F0F0F0;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+}
+
+/* ----------------------------- comments     ---------- */
 
 h3#reply-title { margin-top: 8px; }
 
 div#respond {
 	padding: 32px 64px 64px 64px;
-	/*background-color: #73AFB7;*/
 	background-color: #C9D9EB;
 	margin: 32px 0px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px 0px;
@@ -214,63 +244,32 @@ p.logged-in-as { float: right; margin-top: -2em; }
 .comment-form-comment label { display: none; }
 .comment-form-comment textarea { width: 100%; }
 
-div#secondary {
-	clear: both;
-	overflow: hidden;
-	/*background-color: #CBD893;*/
-	background-color: #F0F0F0;
-	padding: 32px 64px 32px 64px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+/* ----------------------------- sidebar      ---------- */
+
+#secondary { 
+  width: 300px; height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  padding: 50px;
+	background-color: #666666;
+  background-image: url(./img/stressed-linen.png);
+  color: white;
+  box-shadow: 0 0 3px black;
 }
 
-#secondary aside#search-2 {
-	width: 100%;
-	float: none;
-	padding-bottom: 32px;
-	margin-bottom:  32px;
-	border-bottom: 1px solid #333;
+#secondary a, #secondary a:visited {
+	color: #CC0066;
 }
 
-#secondary aside#search-2 input#s {
-	width: 340px;
-	margin: 0px 4px;
+#secondary h1.widget-title {
+	font-size: 20px;
 }
 
-#secondary aside {
-	float: left;
-	width: 280px;
-}
-
-#secondary aside:nth-of-type(even) {
-	margin-right: 64px;
-}
+aside { }
 
 
-.site-content nav {
-	clear: both;
-	overflow: hidden;
-}
-nav span.nav-previous {
-	float: left;
-}
-
-nav span.nav-next {
-	float: right;
-}
-
-nav#nav-below,
-nav.nav-single {
-	clear: both;
-	margin-bottom: 32px;
-	padding: 16px;
-	/*background-color: #CBD893;*/
-	background-color: #F0F0F0;
-	overflow: hidden;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-
-}
+/* ----------------------------- footer       ---------- */
 
 footer#colophon { 
 	margin-bottom: 32px;
@@ -295,3 +294,4 @@ div.site-info {
 .solog-credits {
 	margin-right: 32px;
 }
+
