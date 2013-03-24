@@ -111,8 +111,8 @@ table thead th { vertical-align: bottom; }
 
 
 #page {
-	margin: 0 auto;
-	width: 768px;
+	margin: 0;
+	max-width: 768px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -153,6 +153,11 @@ pre {
 .screen-reader-text { display: none; }
 
 
+#primary { 
+	margin-left: 300px; 
+	max-width: 100%;
+}
+
 /* ----------------------------- header       ---------- */
 
 header {
@@ -174,7 +179,8 @@ h2.site-description {
 
 /* ----------------------------- primary menu ---------- */
 
-.single #site-navigation div.menu { display: none; }
+.single #site-navigation div.menu,
+.archive #site-navigation div.menu { display: none; }
 
 #site-navigation div.menu {
 	background-color: #FFFFFF;
@@ -224,7 +230,6 @@ nav.nav-single {
 	overflow: hidden;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-
 }
 
 /* ----------------------------- comments     ---------- */
@@ -248,26 +253,41 @@ p.logged-in-as { float: right; margin-top: -2em; }
 /* ----------------------------- sidebar      ---------- */
 
 #secondary { 
-  width: 300px; height: 100%;
+  width: 236px; 
+	height: 100%;
   position: fixed;
   top: 0; left: 0;
-  padding: 50px;
+  padding: 32px;
 	background-color: #666666;
   background-image: url(./img/stressed-linen.png);
-  color: white;
+  color: #EEEEEE;
   box-shadow: 0 0 3px black;
+	font-size: 16px;
 }
 
 #secondary a, #secondary a:visited {
-	color: #CC0066;
+	color: #6699CC;
 }
 
-#secondary h1.widget-title {
+aside { 
+	margin: 8px 0px 32px 0px;
+}
+
+aside h1.widget-title {
 	font-size: 20px;
+	margin-bottom: 4px;
+	padding-bottom: 0px;
 }
 
-aside { }
+aside ul {
+	list-style: none outside none;
+	padding-left: 0px;
+	margin: 0px;
+}
 
+aside li {
+	margin: 8px 0px;
+}
 
 /* ----------------------------- footer       ---------- */
 
@@ -295,3 +315,30 @@ div.site-info {
 	margin-right: 32px;
 }
 
+/* ----------------------------- responsive   ---------- */
+
+@media only screen and (max-width: 780px) {
+	
+	#primary { 
+		margin-left: 0px; 
+	}
+	
+	#secondary {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	article {
+		padding: 16px;
+	}
+
+	#site-navigation div.menu {
+		padding: 8px;
+	}
+	
+	aside {
+		float: left;
+		margin-right: 16px;
+	}
+}

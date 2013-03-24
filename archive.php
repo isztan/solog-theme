@@ -7,11 +7,11 @@
  * @package solog
  * @since solog 1.0
  */
+?>
+<section id="primary" class="content-area">
 
-get_header(); ?>
+	<?php get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -19,10 +19,10 @@ get_header(); ?>
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) {
-							printf( __( 'Category Archives: %s', 'solog' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+							printf( __( 'Category: %s', 'solog' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 						} elseif ( is_tag() ) {
-							printf( __( 'Tag Archives: %s', 'solog' ), '<span>' . single_tag_title( '', false ) . '</span>' );
+							printf( __( 'Tagged: %s', 'solog' ), '<span>' . single_tag_title( '', false ) . '</span>' );
 
 						} elseif ( is_author() ) {
 							/* Queue the first post, that way we know
@@ -88,8 +88,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+<?php get_footer(); ?>
+
+</section>
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>

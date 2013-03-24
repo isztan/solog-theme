@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+/**
+ * header 
+ *
+ * @package solog
+ * @since solog 1.0
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />

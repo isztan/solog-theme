@@ -16,7 +16,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() || is_home() ) : // display excerpts on home & search ?>
+	<?php if ( is_search() || is_home() || is_archive() ) : // display excerpts on home & search ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
