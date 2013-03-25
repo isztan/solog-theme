@@ -4,7 +4,7 @@ Theme URI: http://github.com/mkaz/solog
 Author: Marcus Kazmierczak
 Author URI: http://mkaz.com/
 Description: Solog is a simple theme designed to be great for displaying code
-Version: 1.0
+Version: 0.2
 License: GNU General Public License
 License URI: license.txt
 Tags: code, simple
@@ -21,9 +21,6 @@ Credits:
 	Subtle Patterns - http://subtlepatterns.com/
 
 */
-
-@import url(http://fonts.googleapis.com/css?family=Podkova);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
 
 /* ----------------------------- normalize    ---------- */
 
@@ -55,7 +52,7 @@ dfn { font-style: italic; }
 hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
 mark { background: #ff0; color: #000; }
 
-code, kbd, pre, samp { font-family: 'Ubuntu Mono', Menlo, monospace, serif; font-size: 1em; }
+code, kbd, pre, samp { font-family: monospace; font-size: 14.3px; }
 pre { white-space: pre-wrap; }
 
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
@@ -166,7 +163,7 @@ header {
 
 h1.site-title {
 	font-size: 64px;
-	font-family: Podkova, Georgia, serif;
+	font-family: 'Museo Slab', Rockwell, Georgia, serif;
 	text-transform: lowercase;
 	text-align: center;
 }	
@@ -258,8 +255,7 @@ p.logged-in-as { float: right; margin-top: -2em; }
   position: fixed;
   top: 0; left: 0;
   padding: 32px;
-	background-color: #666666;
-  background-image: url(./img/stressed-linen.png);
+	background-color: rgb(23,23,23);
   color: #EEEEEE;
   box-shadow: 0 0 3px black;
 	font-size: 16px;
@@ -267,6 +263,10 @@ p.logged-in-as { float: right; margin-top: -2em; }
 
 #secondary a, #secondary a:visited {
 	color: #6699CC;
+}
+
+#secondary .widget-area {
+	height: 92%;
 }
 
 aside { 
@@ -289,31 +289,21 @@ aside li {
 	margin: 8px 0px;
 }
 
+#secondary input[type="search"] {
+	width: 150px;
+	border-radius: 8px;
+	padding: 4px;
+}
+
 /* ----------------------------- footer       ---------- */
 
 footer#colophon { 
-	margin-bottom: 32px;
-	padding: 16px;
-	background-color: #14556B;
-	color: #FFF;
+	font-size: 13px;
 }
 
-footer#colophon a, footer#colophon a:visited {
-	color: #FFF;
-}
+.solog-credits { }
+.wp-credits { }
 
-footer#colophon {
-	margin: 32px 0px;
-}
-
-div.site-info {
-	padding: 16px; 
-	font-size: 14px;
-}
-
-.solog-credits {
-	margin-right: 32px;
-}
 
 /* ----------------------------- responsive   ---------- */
 
@@ -323,12 +313,6 @@ div.site-info {
 		margin-left: 0px; 
 	}
 	
-	#secondary {
-		position: relative;
-		width: 100%;
-		overflow: hidden;
-	}
-	
 	article {
 		padding: 16px;
 	}
@@ -336,9 +320,28 @@ div.site-info {
 	#site-navigation div.menu {
 		padding: 8px;
 	}
+
+	#secondary {
+		position: relative;
+		width: 100%;
+	}
+	
+	#secondary .widget-area {
+		clear: both;
+		overflow: hidden;
+		height: auto;
+	}
 	
 	aside {
 		float: left;
 		margin-right: 16px;
+		min-width: 150px;
 	}
+	
+	footer#colophon {
+		margin: 32px;
+		padding: 32px;
+	}
+
+
 }

@@ -7,8 +7,10 @@
  */
 ?>
 
-<div id="secondary" class="widget-area" role="complementary">
+<div id="secondary" role="complementary">
 	<?php do_action( 'before_sidebar' ); ?>
+
+	<div class="widget-area">
 	<?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
 
 		<aside id="search" class="widget widget_search">
@@ -32,4 +34,19 @@
 		</aside>
 
 	<?php endif; // end sidebar widget area ?>
+	</div>
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+			
+		<div class="solog-credits">
+			<a href="https://github.com/mkaz/solog-theme" rel="source">solog theme</a> 
+			by <a href="http://mkaz.com/" title="Marcus Kazmierczak" rel="designer">mkaz</a>
+		</div>
+		
+		<div class="wp-credits">
+			Proudly Powered by <a href="http://wordpress.org/" rel="generator">WordPress</a>
+		</div>
+		
+	</footer>
+	
 </div><!-- #secondary -->
