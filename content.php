@@ -4,7 +4,6 @@
  * @since solog 1.0
  */
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'solog' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
@@ -16,7 +15,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( is_search() || is_home() || is_archive() ) : // display excerpts on home & search ?>
+	<?php if ( is_search() || is_home() || is_archive() ) : // display excerpts on home, search, and archives ?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
@@ -57,5 +56,5 @@
 		<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'solog' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
-</article><!-- #post-## -->
+	</footer>
+</article>

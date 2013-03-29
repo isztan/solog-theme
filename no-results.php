@@ -10,9 +10,10 @@
 ?>
 
 <article id="post-0" class="post no-results not-found">
+
 	<header class="entry-header">
 		<h1 class="entry-title"><?php _e( 'Nothing Found', 'solog' ); ?></h1>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -30,5 +31,6 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .entry-content -->
-</article><!-- #post-0 .post .no-results .not-found -->
+	</div>
+
+</article>

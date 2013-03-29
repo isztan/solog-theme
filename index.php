@@ -7,18 +7,18 @@
  */
 ?>
 
-<div id="primary" class="content-area"  role="main">
-	
-	<?php 
-	
-	get_header(); 
-	
+<section id="primary" class="content-area"  role="main">
+
+	<?php
+
+	get_header();
+
 	if ( have_posts() ) :
 
 		while ( have_posts() ) : the_post();
-		
+
 			get_template_part( 'content', get_post_format() );
-			
+
 		endwhile;
 
 		solog_content_nav( 'nav-below' );
@@ -29,10 +29,10 @@
 
 	endif;
 
-	get_footer(); 
-	
+	get_footer();
+
 	?>
 
-</div><!-- #primary -->
+</section><!-- #primary -->
 
 <?php get_sidebar(); ?>

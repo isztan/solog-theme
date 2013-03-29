@@ -1,9 +1,7 @@
 <?php
 /**
  * The template for displaying Archive pages.
- *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
+*
  * @package solog
  * @since solog 1.0
  */
@@ -11,7 +9,6 @@
 <section id="primary" class="content-area">
 
 	<?php get_header(); ?>
-
 
 		<?php if ( have_posts() ) : ?>
 

@@ -18,7 +18,7 @@ Credits:
   Normalize.css - don't reset your css to zero normalize it
   http://necolas.github.com/normalize.css/
 
-	Subtle Patterns - http://subtlepatterns.com/
+  Subtle Patterns - http://subtlepatterns.com/
 
 */
 
@@ -29,13 +29,13 @@ audio, canvas, video { display: inline-block; }
 audio:not([controls]) { display: none; height: 0; }
 [hidden] { display: none; }
 
-html { 
-	font-family: Cambria, Georgia, serif; 
-	-webkit-text-size-adjust: 100%; 
+html {
+	font-family: Cambria, Georgia, serif;
+	-webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-body { 
+body {
 	font-size: 18px;
 	margin: 16px;
 	background-color: #F0F0F0;
@@ -48,7 +48,7 @@ a:active, a:hover { outline: 0; }
 h1 { font-size: 28px; margin: 0.67em 0; }
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
-dfn { font-style: italic; } 
+dfn { font-style: italic; }
 hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
 mark { background: #ff0; color: #000; }
 
@@ -57,10 +57,10 @@ pre { white-space: pre-wrap; }
 
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 
-small { font-size: 80%; } 
+small { font-size: 80%; }
 sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
 sup { top: -0.5em; }
-sub { bottom: -0.25em; } 
+sub { bottom: -0.25em; }
 img { border: 0; }
 
 svg:not(:root) { overflow: hidden; }
@@ -104,7 +104,7 @@ table td {
 }
 
 table th { font-weight: bold; }
-table thead th { vertical-align: bottom; } 
+table thead th { vertical-align: bottom; }
 
 
 #page {
@@ -150,8 +150,8 @@ pre {
 .screen-reader-text { display: none; }
 
 
-#primary { 
-	margin-left: 300px; 
+#primary {
+	margin-left: 300px;
 	max-width: 100%;
 }
 
@@ -166,7 +166,7 @@ h1.site-title {
 	font-family: 'Museo Slab', Rockwell, Georgia, serif;
 	text-transform: lowercase;
 	text-align: center;
-}	
+}
 
 h2.site-description {
 	font-size: 24px;
@@ -249,8 +249,8 @@ p.logged-in-as { float: right; margin-top: -2em; }
 
 /* ----------------------------- sidebar      ---------- */
 
-#secondary { 
-  width: 236px; 
+#secondary {
+  width: 236px;
 	height: 100%;
   position: fixed;
   top: 0; left: 0;
@@ -269,7 +269,7 @@ p.logged-in-as { float: right; margin-top: -2em; }
 	height: 92%;
 }
 
-aside { 
+aside {
 	margin: 8px 0px 32px 0px;
 }
 
@@ -297,7 +297,7 @@ aside li {
 
 /* ----------------------------- footer       ---------- */
 
-footer#colophon { 
+footer#colophon {
 	font-size: 13px;
 }
 
@@ -308,11 +308,11 @@ footer#colophon {
 /* ----------------------------- responsive   ---------- */
 
 @media only screen and (max-width: 780px) {
-	
-	#primary { 
-		margin-left: 0px; 
+
+	#primary {
+		margin-left: 0px;
 	}
-	
+
 	article {
 		padding: 16px;
 	}
@@ -325,23 +325,22 @@ footer#colophon {
 		position: relative;
 		width: 100%;
 	}
-	
+
 	#secondary .widget-area {
 		clear: both;
 		overflow: hidden;
 		height: auto;
 	}
-	
+
 	aside {
 		float: left;
 		margin-right: 16px;
 		min-width: 150px;
 	}
-	
+
 	footer#colophon {
 		margin: 32px;
 		padding: 32px;
 	}
-
 
 }

@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id="primary" class="content-area image-attachment" role="main">
+<section id="primary" class="content-area image-attachment" role="main">
 
 	<?php get_header(); ?>
 
@@ -118,5 +118,4 @@
 
 	<?php get_footer(); ?>
 
-</div><!--
-
+</section>

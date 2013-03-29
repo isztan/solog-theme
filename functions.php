@@ -147,12 +147,11 @@ function solog_scripts() {
 	}
 
 	if ( is_singular() ) {
-		wp_enqueue_script( 'solog-js', get_template_directory_uri() . '/js/solog.js', array( 'jquery' ) );
 		wp_enqueue_script( 'solog-javascript', get_template_directory_uri() . '/js/solog.js', array('jquery'), '1.0', true );
 		wp_enqueue_script( 'prettify-javascript', get_template_directory_uri() . '/js/prettify/prettify.js', array('solog-javascript'), '1.0', true );
 		wp_enqueue_style( 'prettify-style', get_template_directory_uri() . '/js/prettify/prettify.css' );
 	}
-			
+
 }
 add_action( 'wp_enqueue_scripts', 'solog_scripts' );
 

@@ -5,35 +5,38 @@
  * @package solog
  * @since solog 1.0
  */
+?>
 
-get_header(); ?>
+<section id="primary" class="content-area" role="main">
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+	<?php
 
-		<?php if ( have_posts() ) : ?>
+	get_header();
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'solog' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+	if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<header class="page-header">
+			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'solog' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		</header>
 
-				<?php get_template_part( 'content', 'search' ); ?>
+		<?php
 
-			<?php endwhile; ?>
+		while ( have_posts() ) : the_post();
 
-			<?php solog_content_nav( 'nav-below' ); ?>
+			get_template_part( 'content', 'search' );
 
-		<?php else : ?>
+		endwhile;
 
-			<?php get_template_part( 'no-results', 'search' ); ?>
+		solog_content_nav( 'nav-below' );
 
-		<?php endif; ?>
+	else :
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+		get_template_part( 'no-results', 'search' );
+
+	endif;
+
+	get_footer(); ?>
+
+</section>
 
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
