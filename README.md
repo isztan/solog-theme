@@ -1,13 +1,17 @@
 
 # Solog Theme
-http://github.com/mkaz/solog
 
 Solog is a WordPress theme designed to be great for displaying code, it trys to be minimal and fast. The theme is responsive and will work with desktop, tablets and mobile devices.
 
-The theme is setup to automatically syntax highlight your code. Just use the `pre`, or `code` tags and it trys to guess the language. You can also give it a hint using:
+<img src="screenshot.png" width="600" height="450" alt="Theme screenshot">
+
+
+### Usage
+
+The theme is setup to automatically syntax highlight your code. Just use the `pre`, or `code` tags and it will try to guess the language. You can also give it a hint using:
 
     <pre class="lang-py">
-		print("hello python!")
+		  print("hello python!")
     </pre>
 
 
@@ -27,13 +31,12 @@ See [Prettify documentation](http://code.google.com/p/google-code-prettify/wiki/
 
 ### Author
 
-  Marcus Kazmierczak
-  http://mkaz.com/
+Marcus Kazmierczak ( [@mkaz](http://twitter.com/mkaz), http://mkaz.com/ )
 
 
 ### License
 
-  GNU General Public License.
-  This theme, like WordPress, is licensed under the GPL.
+GNU General Public License.
+This theme, like WordPress, is licensed under the GPL.
 
-  Use it to make something cool, have fun, and share what you've learned with others.
+Use it to make something cool, have fun, and share what you've learned with others.
