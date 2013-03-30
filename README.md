@@ -16,10 +16,10 @@ See [Prettify documentation](http://code.google.com/p/google-code-prettify/wiki/
 
 ### Credits
 
-  * [Normalize.css](http://necolas.github.com/normalize.css/) - don't reset your css to zero normalize it
+  * [Normalize.css](http://necolas.github.com/normalize.css/) - don't reset your css to zero, normalize it
 
   * [Prettify](http://code.google.com/p/google-code-prettify/) - Code Syntax Highlighting
-  
+
   * [Subtle Patterns](http://subtlepatterns.com/) - background image(s)
 
   * Kick started using [Underscores.me](http://underscores.me/)
@@ -31,7 +31,7 @@ See [Prettify documentation](http://code.google.com/p/google-code-prettify/wiki/
   http://mkaz.com/
 
 
-### License 
+### License
 
   GNU General Public License.
   This theme, like WordPress, is licensed under the GPL.
