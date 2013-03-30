@@ -334,6 +334,10 @@ footer#colophon {
 
 @media only screen and (max-width: 780px) {
 
+	body {
+		margin: 4px;
+	}
+
 	#primary {
 		margin-left: 0px;
 	}
