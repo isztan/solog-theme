@@ -70,6 +70,7 @@ add_action( 'widgets_init', 'solog_widgets_init' );
 function solog_scripts() {
 	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'error-track-javascript', get_template_directory_uri() . '/js/error-track.js' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
