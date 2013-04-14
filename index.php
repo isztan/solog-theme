@@ -29,10 +29,12 @@
 
 	endif;
 
-	get_footer();
-
 	?>
 
 </section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+<?php
+
+get_sidebar();
+
+get_footer();

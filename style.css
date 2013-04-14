@@ -204,14 +204,12 @@ h2.site-description {
 
 /* ----------------------------- primary menu ---------- */
 
-.single #site-navigation .menu,
-.archive #site-navigation .menu { display: none; }
 
 #menu-header-menu .menu,
 #site-navigation .menu {
 	background-color: #FFFFFF;
 	padding: 8px 16px;
-	margin: 8px 0px;
+	margin: 16px 0px;
 }
 
 #menu-header-menu .menu ul,
@@ -223,7 +221,7 @@ h2.site-description {
 #site-navigation .menu li {
 	display: inline-block;
 	position: relative;
-	margin-right: 8px;
+	margin-right: 4px;
 }
 
 #menu-header-menu ul,
@@ -236,19 +234,27 @@ h2.site-description {
 
 #menu-header-menu .menu li a,
 #site-navigation .menu  li a {
-	color: #B00;
+	color: #333;
+	font-family: sans-serif;
 	display: block;
 	font-size: 15px;
 	line-height: 1;
-	padding: 8px 16px;
+	padding: 4px 8px;
 	text-decoration: none;
 }
+
+#menu-header-menu .menu li a:before,
+#site-navigation .menu  li a:before {
+	content: "\25AA \0020";
+	color: #B00;
+}
+
 
 #menu-header-menu .menu li:hover > a,
 #menu-header-menu .menu li a:hover,
 #site-navigation .menu  li:hover > a,
 #site-navigation .menu  li a:hover {
-	background-color: #E6E6E6;
+	background-color: #F8CD9F;
 	color: #B00;
 }
 
@@ -256,7 +262,7 @@ h2.site-description {
 #menu-header-menu .menu .children,
 #site-navigation .menu  .sub-menu,
 #site-navigation .menu  .children {
-	background-color: #E6E6E6;
+	background-color: #F8CD9F;
 	border: none;
 	color: #B00;
 	display: none;
@@ -279,7 +285,7 @@ h2.site-description {
 
 #menu-header-menu .menu ul ul a,
 #site-navigation .menu ul ul a {
-	color: #B00;
+	color: #333;
 	margin: 0;
 	width: 200px;
 }
@@ -350,9 +356,8 @@ p.logged-in-as { float: right; margin-top: -2em; }
 
 #secondary {
   	padding: 32px;
-	background-color: rgb(23,23,23);
+	background-color: #5C5E61;
   	color: #EEEEEE;
-  	box-shadow: 0 0 3px black;
 	font-size: 16px;
 	clear: both;
 	overflow: hidden;
@@ -395,9 +400,20 @@ aside li {
 }
 
 /* ----------------------------- footer       ---------- */
+footer {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
 
 footer#colophon {
 	font-size: 13px;
+	color: white;
+	margin-top: 4px;
+}
+
+footer#colophon a, footer#colophon a:visited {
+	color: #DDF;
 }
 
 .solog-credits { }
