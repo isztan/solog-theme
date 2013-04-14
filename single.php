@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id="primary" class="content-area" role="main">
+<section id="primary" class="content-area" role="main">
 
 	<?php
 
@@ -26,10 +26,14 @@
 
 	endwhile; // end of the loop.
 
-	get_footer();
-
 	?>
 
-</div>
+</section>
 
-<?php get_sidebar(); ?>
+<?php
+
+get_sidebar();
+
+get_footer();
+
+?>

@@ -116,6 +116,6 @@
 
 	<?php endwhile; // end of the loop. ?>
 
-	<?php get_footer(); ?>
-
 </section>
+
+<?php get_footer(); ?>

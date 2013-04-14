@@ -24,9 +24,10 @@ See [Prettify documentation](http://code.google.com/p/google-code-prettify/wiki/
 
   * [Prettify](http://code.google.com/p/google-code-prettify/) - Code Syntax Highlighting
 
-  * [Subtle Patterns](http://subtlepatterns.com/) - background image(s)
-
   * Kick started using [Underscores.me](http://underscores.me/)
+
+  * Background photo by Marcus Kazmierczak
+    http://mkaz.wordpress.com/2013/01/26/sun-setting-on-the-mission/
 
 
 ### Author
