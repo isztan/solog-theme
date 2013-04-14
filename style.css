@@ -43,6 +43,7 @@ body {
 	font-size: 18px;
 	margin: 16px;
 	background-color: #F0F0F0;
+	background-size: cover;
 	color: #333;
 }
 
@@ -133,7 +134,7 @@ table thead th { vertical-align: bottom; }
 
 
 #page {
-	margin: 0;
+	margin: 0 auto;
 	max-width: 768px;
 }
 
@@ -176,7 +177,6 @@ pre {
 
 
 #primary {
-	margin-left: 300px;
 	max-width: 100%;
 }
 
@@ -275,15 +275,13 @@ p.logged-in-as { float: right; margin-top: -2em; }
 /* ----------------------------- sidebar      ---------- */
 
 #secondary {
-  width: 236px;
-	height: 100%;
-  position: fixed;
-  top: 0; left: 0;
-  padding: 32px;
+  	padding: 32px;
 	background-color: rgb(23,23,23);
-  color: #EEEEEE;
-  box-shadow: 0 0 3px black;
+  	color: #EEEEEE;
+  	box-shadow: 0 0 3px black;
 	font-size: 16px;
+	clear: both;
+	overflow: hidden;
 }
 
 #secondary a, #secondary a:visited {
@@ -291,11 +289,13 @@ p.logged-in-as { float: right; margin-top: -2em; }
 }
 
 #secondary .widget-area {
-	height: 92%;
+
 }
 
 aside {
-	margin: 8px 0px 32px 0px;
+	margin: 8px 16px;
+	float: left;
+	max-width: 240px;
 }
 
 aside h1.widget-title {

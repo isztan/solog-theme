@@ -40,7 +40,7 @@ add_action( 'after_setup_theme', 'solog_setup' );
 function solog_register_custom_background() {
 	$args = array(
 		'default-color' => 'F0F0F0',
-		'default-image' => get_template_directory_uri() . '/img/project-papper.png',
+		'default-image' => get_template_directory_uri() . '/img/sf-sunset.jpg',
 	);
 
 	$args = apply_filters( 'solog_custom_background_args', $args );
