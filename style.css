@@ -357,14 +357,14 @@ p.logged-in-as { float: right; margin-top: -2em; }
 #secondary {
   	padding: 32px;
 	background-color: rgba(92, 94, 97, 0.9);
-  	color: #EEEEEE;
+  	color: #EEE;
 	font-size: 16px;
 	clear: both;
 	overflow: hidden;
 }
 
 #secondary a, #secondary a:visited {
-	color: #6699DD;
+	color: #7AF;
 }
 
 #secondary .widget-area {
@@ -402,7 +402,7 @@ aside li {
 }
 
 #secondary #searchsubmit {
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #FFF;
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
 	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
 	background-color:#ededed;
