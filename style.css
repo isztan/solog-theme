@@ -356,7 +356,7 @@ p.logged-in-as { float: right; margin-top: -2em; }
 
 #secondary {
   	padding: 32px;
-	background-color: #5C5E61;
+	background-color: rgba(92, 94, 97, 0.9);
   	color: #EEEEEE;
 	font-size: 16px;
 	clear: both;
@@ -364,7 +364,7 @@ p.logged-in-as { float: right; margin-top: -2em; }
 }
 
 #secondary a, #secondary a:visited {
-	color: #6699CC;
+	color: #6699DD;
 }
 
 #secondary .widget-area {
@@ -374,7 +374,9 @@ p.logged-in-as { float: right; margin-top: -2em; }
 aside {
 	margin: 8px 16px;
 	float: left;
-	max-width: 240px;
+	/*max-width: 240px;*/
+	min-width: 200px;
+	width: 20%;
 }
 
 aside h1.widget-title {
@@ -398,6 +400,37 @@ aside li {
 	border-radius: 8px;
 	padding: 4px;
 }
+
+#secondary #searchsubmit {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color: #777777;
+	font-family: sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 10px;
+	margin-top: 4px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+#secondary #searchsubmit:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background-color:#dfdfdf;
+}
+
+#secondary #searchsubmit:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 /* ----------------------------- footer       ---------- */
 footer {
