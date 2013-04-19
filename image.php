@@ -6,10 +6,9 @@
  * @since solog 1.0
  */
 ?>
+<?php get_header(); ?>
 
 <section id="primary" class="content-area image-attachment" role="main">
-
-	<?php get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 

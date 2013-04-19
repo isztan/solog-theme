@@ -5,11 +5,11 @@
  * @package solog
  * @since solog 1.0
  */
-?>
 
+	get_header(); 
+?>
 <section id="primary" class="content-area" role="main">
 
-	<?php get_header(); ?>
 
 	<article id="post-0" class="post error404 not-found">
 
@@ -36,9 +36,8 @@
 		</div>
 	</article>
 
-
-	<?php get_footer(); ?>
-
 </section>
 
 <?php get_sidebar(); ?>
+
+<?php get_footer(); ?>

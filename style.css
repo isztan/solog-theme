@@ -180,7 +180,7 @@ pre {
 
 
 #primary {
-	max-width: 100%;
+	width: 100%;
 }
 
 /* ----------------------------- header       ---------- */
@@ -309,6 +309,10 @@ article {
 article footer {
 	margin-top: 32px;
 	border-top: 1px solid #999;
+}
+
+article h3, article h4 {
+	margin-top: 3em;
 }
 
 nav div.previous {
@@ -461,21 +465,26 @@ footer#colophon a, footer#colophon a:visited {
 		margin: 4px;
 	}
 
-	#primary {
-		margin-left: 0px;
+	#page, #primary, header, section, nav {
+		width: 100%;
+		margin: 0px auto;
 	}
 
+	hgroup { text-align; center; }
+
 	article {
+		width: 100%;
 		padding: 16px;
 	}
 
 	#site-navigation div.menu {
+		width: 100%;
 		padding: 8px;
 	}
 
 	#secondary {
-		position: relative;
 		width: 100%;
+		padding: 16px;
 	}
 
 	#secondary .widget-area {
@@ -491,8 +500,8 @@ footer#colophon a, footer#colophon a:visited {
 	}
 
 	footer#colophon {
-		margin: 32px;
-		padding: 32px;
+		margin: 16px;
+		padding: 16px;
 	}
 
 }

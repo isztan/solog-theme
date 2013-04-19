@@ -5,13 +5,12 @@
  * @package solog
  * @since solog 1.0
  */
+
+	get_header();
 ?>
 
 <section id="primary" class="content-area"  role="main">
-
-	<?php
-
-	get_header();
+<?php
 
 	if ( have_posts() ) :
 
@@ -29,9 +28,8 @@
 
 	endif;
 
-	?>
-
-</section><!-- #primary -->
+?>
+</section>
 
 <?php
 
